@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Template</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<!--
+		<script>
+			// Här bestäms vilken sida som visas först
+			window.addEventListener("load", () => location.href = "#page1");
+		</script>
+		-->
+	</head>
+
+
+	<body>
+		<div class="center">
+			<h1>Test 2</h1>
+			<p>The slider below applies compression to the sound file. "A" on the left represents an 
+				uncompressed signal and "B" on the right a fully compressed signal.</p>
+			<p>Please give your opinion about the amount of compression in the google form and click "Next".</p>
+			<p>(Note: Large files. If the sound doesn't start when "START" is pressed, wait a few seconds and try again)</p>
+
+			<player>
+				<button data-waxml-click-start=".loop">START</button>
+				<button data-waxml-click-stop=".loop">STOP</button>
+				A<input type="range" min="0" max="100" value="0" data-waxml-target="$mix" />B
+			</player>
+
+			<p></p>
+			
+			<div>
+				<button ><a href="3.html" class="button">Next</a></button>
+			</div>
+		</div>	
+				
+		<script src="plugins/WebAudioXML.js" data-source="audio2.xml"></script>
+
+	</body>
+</html>
