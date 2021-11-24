@@ -40,5 +40,11 @@
         <AudioBufferSourceNode class="loop" src="audio/humorhimlen10.wav" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
+    <Mixer>
+        <AudioBufferSourceNode class="loop" src="audio/brus.wav" loop="true"></AudioBufferSourceNode>
+    </Mixer>
+
+
+
     
 </Audio>
