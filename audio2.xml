@@ -29,16 +29,20 @@
 
     <!-- If you would like to experiment with this configuration, please remove the 
         class="loop" for the AudioBufferSourceNodes above and add it to the once below -->
-    <var name="mix_a" value="$mix" default="1" mapin="0,100" mapout="1,0" curve="2"></var>
-    <var name="mix_b" value="$mix" default="0" mapin="0,100" mapout="0,1" curve="0.5"></var>
+    <var name="mix_a" value="$mix" default="1" mapin="0,100" mapout="1,0" curve="1"></var>
+    <var name="mix_b" value="$mix" default="0" mapin="0,100" mapout="0,1" curve="1"></var>
 
     <Mixer gain="$mix_a">
-        <AudioBufferSourceNode class="loop" src="audio/humorhimlenOff.wav" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/dokuOrig.wav" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_b">
-        <AudioBufferSourceNode class="loop" src="audio/humorhimlen13.wav" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/dokuBSS.wav" loop="true"></AudioBufferSourceNode>
     </Mixer>
+
+    <!--<Mixer>
+        <AudioBufferSourceNode class="loop" src="audio/brus28.wav" loop="true"></AudioBufferSourceNode>
+    </Mixer> -->
 
 
 </Audio>
