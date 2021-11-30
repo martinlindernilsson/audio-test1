@@ -16,15 +16,13 @@
 	<body>
 		<div class="center">
 			<h1>Test 2</h1>
-			<p>The slider below applies compression to the sound file. "A" on the left represents an 
-				uncompressed signal and "B" on the right a fully compressed signal.</p>
-			<p>Please give your opinion about the amount of compression in the google form and click "Next".</p>
-			<p>(Note: Large files. If the sound doesn't start when "START" is pressed, wait a few seconds and try again)</p>
+			<p>Adjust the slider so that you can follow the speech as clearly as possible</p>
+			
 
 			<player>
 				<button data-waxml-click-start=".loop">START</button>
 				<button data-waxml-click-stop=".loop">STOP</button>
-				A<input type="range" min="0" max="100" value="0" data-waxml-target="$mix" />B
+				A<input type="range" min="0" max="90" value="45" data-waxml-target="$mix" />B
 			</player>
 
 			<p></p>
