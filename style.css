@@ -5,6 +5,14 @@ img {
 	display: block;
 }
 
+output {
+	font-size: 30pt;
+}
+
+input {
+	width: 300px;
+}
+
 .center {
 	margin: auto;
 	width: 60%;
