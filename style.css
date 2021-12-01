@@ -52,5 +52,5 @@ p {
 }
 
 @media only screen and (max-width:480px) { 
-	.startstop-button {width: 100%; font-size: 4.25em; }
+	.startstop-button {width: 100%; font-size: 8.25em; }
   }
