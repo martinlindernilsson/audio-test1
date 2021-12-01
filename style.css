@@ -6,7 +6,10 @@ img {
 }
 
 output {
-	font-size: 30pt;
+	font-size: 36pt;
+	position: relative;
+	left: 40px;
+	color: #a30505;
 }
 
 input {
