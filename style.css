@@ -20,36 +20,31 @@ input {
 	margin: auto;
 	width: 60%;
 }
-§
 
-button {
-	
-	border-radius: 10px;
-	font-size: 13pt;
-	padding: 7px 8px 7px 7px;
-	margin-right: 6px;
-	min-width: 100px;
-  	min-height: 30px;
-  	display: inline;
-	
-}
+.startstop-button {
 
-.startbutton {
-	width: 120px;
-	height: 30px;
-	border-radius: 10px;
-	font-size: 13pt;
-}
-
-button {
-    -webkit-appearance: button;
+	-webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
 
     text-decoration: none;
     color: initial;
 	
+
+	width: 120px;
+	height: 30px;
+	font-size: 13pt;
+	border-radius: 10px;
+	
+	padding: 7px 8px 30px 7px;
+	margin-right: 6px;
+	min-width: 100px;
+  	min-height: 30px;
+  	display: inline;
+	
 }
+	
+
 
 p {
 	font-size: 15pt;
@@ -57,5 +52,5 @@ p {
 }
 
 @media only screen and (max-width:480px) { 
-	button {width: 100%; font-size: 4.25em; }
+	.startstop-button {width: 100%; font-size: 4.25em; }
   }

@@ -22,8 +22,8 @@
 			
 			
 			<player>
-				<button data-waxml-click-start=".loop">START</button>
-				<button data-waxml-click-stop=".loop">STOP</button>
+				<button class="startstop-button" data-waxml-click-start=".loop">START</button>
+				<button class="startstop-button" data-waxml-click-stop=".loop">STOP</button>
 				<br>
 				<br>
 				A<input type="range" min="1" max="5" value="3" data-waxml-target="$mix" oninput="this.nextElementSibling.value = this.value"/>B
@@ -36,7 +36,7 @@
 			<p>when satisfied, note your result (number 1-5) in the google form and press "Next".</p>
 			
 			<div>
-				<button ><a href="2.html" class="button">Next</a></button>
+				<button class="startstop-button"><a href="2.html" class="button">Next</a></button>
 			</div>
 		</div>	
 		<script src="plugins/WebAudioXML.js" data-source="audio.xml"></script>
