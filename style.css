@@ -53,7 +53,7 @@ p {
 	line-height:130%;
 }
 
-@media only screen and (max-width:600px) { 
+@media only screen and (min-width: 360px) and (max-width: 767px) { 
 	.startstop-button {
 		
 		width: 60%;
