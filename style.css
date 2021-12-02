@@ -1,16 +1,25 @@
 
+@media only screen and (max-width: 1450px) and (orientation: portrait) { 
+	.startstop-button {
+		
+		width: 60%;
+		min-height: 80px;
+		font-size: 2.25em; 
+	}
+  }
+
 .page {
 	margin: auto;
 	width: 70%;
 }
 .center {
 	justify-content: center;
-
 	text-align: center;
 }
 
 .title {
-	font-size: 36pt;
+	font-size: 46pt;
+	text-align: center;
 }
 
 output {
@@ -51,12 +60,3 @@ p {
 	line-height:130%;
 }
 
-@media only screen and (max-width: 1450px) and (orientation: portrait) { 
-	.startstop-button {
-		
-		width: 60%;
-		min-height: 80px;
-		font-size: 2.25em; 
-	}
-	
-  }
