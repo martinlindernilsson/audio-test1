@@ -14,27 +14,32 @@
 
 
 	<body>
-		<div class="center">
-			<h1>Test 2</h1>
-			<p>Adjust the slider so that you can follow the speech as clearly as possible</p>
-			
-
-			<player>
-				<button data-waxml-click-start=".loop">START</button>
-				<button data-waxml-click-stop=".loop">STOP</button>
-				<br>
-				<br>
-				A<input type="range" min="1" max="5" value="3" data-waxml-target="$mix" oninput="this.nextElementSibling.value = this.value"/>B
-				
-				<output>5</output>
-			</player>
-
-			<p></p>
+		<div class="page">
+			<br>
+			<div class="title">Test 2</div>
+			<p>Pressing "START" will play a 20 second sound clip that will loop until "STOP" is pressed.</p>
+			<p>Adjust the slider so that you can follow the speech as clearly as possible, for the entire clip, while maintaining a satisfactory overall listening experience.</p>
+			<br>
 			
 			<div class="center">
-				<button><a href="3.html" class="button">Next</a></button>
+				<player>
+					<button class="startstop-button" data-waxml-click-start=".loop">START</button>
+					<button class="startstop-button" data-waxml-click-stop=".loop">STOP</button>
+					<br>
+					<br>
+					<input type="range" min="1" max="5" value="3" data-waxml-target="$mix" oninput="this.nextElementSibling.value = this.value"/>
+				
+					<output>5</output>
+
+				</player>
 			</div>
-		</div>	
+			<br>
+			<p>When satisfied, note your result (number 1-5 displayed in red) in the Google form and press "Next".</p>
+			
+			<div class="center">
+				<button class="startstop-button" onclick="window.location.href='3.html';">Next</button>
+			</div>
+		</div>		
 				
 		<script src="plugins/WebAudioXML.js" data-source="audio2.xml"></script>
 
