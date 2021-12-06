@@ -10,6 +10,15 @@
 			window.addEventListener("load", () => location.href = "#page1");
 		</script>
 		-->
+		<script>
+			function setValue(id,newvalue) {
+  				var s= document.getElementById(id);
+  				s.value = newvalue;
+			}
+			window.onload=function() {
+  				setValue("slider-range", Math.ceil(Math.random() * 5));
+			}
+		</script>
 	</head>
 
 
@@ -18,7 +27,8 @@
 			<br>
 			<div class="title">Test 1</div>
 			<p>Pressing "START" will play a 20 second sound clip that will loop until "STOP" is pressed.</p>
-			<p>Adjust the slider so that you can follow the speech as clearly as possible, for the entire clip, while maintaining a satisfactory overall listening experience.</p>
+			<p>Adjust the slider so that you can follow the speech as clearly as possible, for the entire clip, 
+				while maintaining a satisfactory overall listening experience.</p>
 			<br>
 			
 			<div class="center">
@@ -27,9 +37,9 @@
 					<button class="startstop-button" data-waxml-click-stop=".loop">STOP</button>
 					<br>
 					<br>
-					<input type="range" min="1" max="5" value="1" data-waxml-target="$mix" oninput="this.nextElementSibling.value = this.value"/>
+					<input id="slider-range" type="range" min="1" max="5" data-waxml-target="$mix" oninput="this.nextElementSibling.value = this.value"/>
 				
-					<output>5</output>
+					<output></output>
 
 				</player>
 			</div>
