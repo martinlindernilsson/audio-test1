@@ -15,15 +15,15 @@
     <var name="mix_b" value="$mix" default="5" mapin="1,5" mapout="0,1" curve="1"></var>
 
     <Mixer gain="$mix_a">
-        <AudioBufferSourceNode class="loop" src="audio/dokuBSS.aac" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/dokuBSS.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_b">
-        <AudioBufferSourceNode class="loop" src="audio/dokuOrig.aac" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/dokuOrig.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer>
-        <AudioBufferSourceNode class="loop" src="audio/brus34.aac" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/brus34.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
 
