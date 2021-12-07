@@ -23,14 +23,14 @@
 }
 
 output {
-	font-size: 36pt;
+	font-size: 46pt;
 	position: relative;
 	left: 10px;
 	color: #a30505;
 }
 
 input {
-	width: 80%;
+	width: 76%;
 }
 
 .startstop-button {

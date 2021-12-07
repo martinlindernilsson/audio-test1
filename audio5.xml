@@ -39,9 +39,9 @@
         <AudioBufferSourceNode class="loop" src="audio/humorhimlen10.aac" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
-    <Mixer>
+    <!--<Mixer>
         <AudioBufferSourceNode class="loop" src="audio/brus34.aac" loop="true"></AudioBufferSourceNode>
-    </Mixer>
+    </Mixer>-->
 
 
 </Audio>

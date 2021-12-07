@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Audio version="1.0" timeUnit="ms" gain="0dB">
 
-    <!-- The HTML slider sets the value of $mix when the attribute data-waxml-target="mix".
-        The gain for the Mixer elements containing the audio files is calculated accordingly
-        to set a value between 0 and 1 (opposite for the two audio files).
-        The files are started and stopped by using the HTML attribute data-waxml-click-start=".loop"
-        for the START button and data-waxml-click-stop respectively. The target is defined using
-        standard CSS selector syntax and refers to the id and/or class names set for the the WebAudioXML
-        element (class="loop") in this case.
-    -->
-
-    <Mixer gain="1-$mix/100">
-        <AudioBufferSourceNode src="audio/humorhimlenOff.wav" loop="true"></AudioBufferSourceNode>
-    </Mixer>
-
-    <Mixer gain="$mix/100">
-        <AudioBufferSourceNode src="audio/humorhimlen10.wav" loop="true"></AudioBufferSourceNode>
-    </Mixer>
-
-
+  
     <!-- This is a more flexible solution where the slider sets the variable $mix and the
         the two <var> elements sets is values and maps them using mapin and mapout.
         attributes. A <var> element also have possibilities to define default values, 
@@ -29,43 +12,21 @@
 
     <!-- If you would like to experiment with this configuration, please remove the 
         class="loop" for the AudioBufferSourceNodes above and add it to the once below -->
-    <var name="mix_a" value="$mix" default="0" mapin="1,2,5" mapout="1,0,0" curve="1"></var>
-    <var name="mix_b" value="$mix" default="0" mapin="1,2,3,5" mapout="0,1,0,0" curve="1"></var>
-    <var name="mix_c" value="$mix" default="0" mapin="1,2,3,4,5" mapout="0,0,1,0,0" curve="1"></var>
-    <var name="mix_d" value="$mix" default="0" mapin="1,3,4,5" mapout="0,0,1,0" curve="1"></var>
-    <var name="mix_e" value="$mix" default="0" mapin="1,4,5" mapout="0,0,1" curve="1"></var>
-
-    <!--
-    <var name="mix_a" value="$mix" default="0" mapin="0,9,10,80,81,90" mapout="1,1,0,0,1,1" curve="1"></var>
-    <var name="mix_b" value="$mix" default="0" mapin="0,9,10,19,20,70,71,80,81,90" mapout="0,0,1,1,0,0,1,1,0,0" curve="1"></var>
-    <var name="mix_c" value="$mix" default="0" mapin="0,19,20,29,30,60,61,70,71,90" mapout="0,0,1,1,0,0,1,1,0,0" curve="1"></var>
-    <var name="mix_d" value="$mix" default="0" mapin="0,29,30,39,40,50,51,60,61,90" mapout="0,0,1,1,0,0,1,1,0,0" curve="1"></var>
-    <var name="mix_e" value="$mix" default="0" mapin="0,39,40,50,51,90" mapout="0,0,1,1,0,0" curve="1"></var>
-    -->
+    <var name="mix_a" value="$mix" default="5" mapin="1,5" mapout="1,0" curve="1"></var>
+    <var name="mix_b" value="$mix" default="5" mapin="1,5" mapout="0,1" curve="1"></var>
 
     <Mixer gain="$mix_a">
-        <AudioBufferSourceNode class="loop" src="audio/morgonpasset2_10.aac" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/nyheterBSS.aac" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_b">
-        <AudioBufferSourceNode class="loop" src="audio/morgonpasset2_12.aac" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/nyheterOrig.aac" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
-    <Mixer gain="$mix_c">
-        <AudioBufferSourceNode class="loop" src="audio/morgonpasset2_14.aac" loop="true"></AudioBufferSourceNode>
-    </Mixer>
-
-    <Mixer gain="$mix_d">
-        <AudioBufferSourceNode class="loop" src="audio/morgonpasset2_16.aac" loop="true"></AudioBufferSourceNode>
-    </Mixer>
-
-    <Mixer gain="$mix_e">
-        <AudioBufferSourceNode class="loop" src="audio/morgonpasset2_Off.aac" loop="true"></AudioBufferSourceNode>
-    </Mixer>
-
-    <Mixer>
+    <!--<Mixer>
         <AudioBufferSourceNode class="loop" src="audio/brus34.aac" loop="true"></AudioBufferSourceNode>
-    </Mixer>
+    </Mixer>-->
 
 
+    
 </Audio>
