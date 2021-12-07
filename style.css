@@ -64,7 +64,12 @@ p {
 
 	p {
 		font-size: 13pt;
-		line-height:120%;
+		line-height:130%;
+	}
+
+	.title {
+		font-size: 36pt;
+		text-align: center;
 	}
   }
 
