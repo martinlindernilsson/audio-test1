@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Audio version="1.0" timeUnit="ms" gain="0dB">
 
-    <!-- The HTML slider sets the value of $mix when the attribute data-waxml-target="mix".
-        The gain for the Mixer elements containing the audio files is calculated accordingly
-        to set a value between 0 and 1 (opposite for the two audio files).
-        The files are started and stopped by using the HTML attribute data-waxml-click-start=".loop"
-        for the START button and data-waxml-click-stop respectively. The target is defined using
-        standard CSS selector syntax and refers to the id and/or class names set for the the WebAudioXML
-        element (class="loop") in this case.
-    -->
-
-    <Mixer gain="1-$mix/100">
-        <AudioBufferSourceNode src="audio/humorhimlenOff.wav" loop="true"></AudioBufferSourceNode>
-    </Mixer>
-
-    <Mixer gain="$mix/100">
-        <AudioBufferSourceNode src="audio/humorhimlen10.wav" loop="true"></AudioBufferSourceNode>
-    </Mixer>
 
 
     <!-- This is a more flexible solution where the slider sets the variable $mix and the
