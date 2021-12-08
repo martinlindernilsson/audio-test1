@@ -2119,9 +2119,8 @@ class GUI {
 				border-radius: 5px;
 				background-color: rgba(0,0,0,0.05);
 				box-sizing: content-box;
-				width: fit-content;
 				width: -moz-fit-content;
-
+				width: fit-content;
 			}
 			#waxml-GUI .waxml-object.noID {
 				margin: 0px;
