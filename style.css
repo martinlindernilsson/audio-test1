@@ -47,10 +47,18 @@ input {
 }
 	
 
-
 p {
 	font-size: 15pt;
 	line-height:130%;
+}
+
+.instruction {
+	margin: auto;
+	width: 80%;
+}
+
+.icon {
+	width: 40px;
 }
 
 
@@ -70,6 +78,11 @@ p {
 	.title {
 		font-size: 36pt;
 		text-align: center;
+	}
+
+	.instruction {
+		margin: auto;
+		width: 100%;
 	}
   }
 
